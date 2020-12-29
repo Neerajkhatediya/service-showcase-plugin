@@ -1,12 +1,10 @@
 <?php
 /*
 Plugin Name: EI Services
-Plugin URI: https://www.e-intelligence.in
 Description: EI Services is a simple WordPress plugin for displaying your services.
 Version: 1.0
 Text Domain: ei-services
-Author: E-Intelligence
-Author URI: https://www.e-intelligence.in
+Author: Neeraj Khatediya
 */
 
 // Exit if accessed directly.
