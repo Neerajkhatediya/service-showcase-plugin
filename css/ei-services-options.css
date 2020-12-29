@@ -1,0 +1,36 @@
+/* 
+ * EI-Services options settings styles 
+ */
+.services_general_settings{
+	width: 97.5%;
+	margin-left: 15px;
+	margin-top: 20px;
+	border: 1px solid #ccc;
+}
+
+.eis_settings_title{
+	background: #393c3f;
+	padding: 10px;
+	color: #ffffff;
+}
+.eis_settings_title h1{
+	color: #ffffff;
+}
+table{
+	padding: 10px;
+}
+.eis_options{
+	width: 60%;
+}
+.eis_full_section{
+	padding: 10px;
+}
+.general_setup{
+	background: #ffffff;
+}
+.custom_shortcode{
+	padding: 20px;
+	color: #ea8717;
+	border: 1px solid #ea8717;
+	font-size: 15px;
+}
