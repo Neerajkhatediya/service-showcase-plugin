@@ -27,8 +27,8 @@ jQuery(document).ready(function($){
 	//Load data on button click
 	if( load_data == 'load_btn' ){
 		$('.loadMore_btn').click(function(){
-			var page_num = $(this).attr('data-pagenum');
-			loadServices(page_num);
+			loadServices(count);
+			count++;
 		});
 	}
 	
@@ -38,7 +38,7 @@ jQuery(document).ready(function($){
 		var ajaxurl = eis_infinitescroll.ajaxurl;
 		var services_order = eis_infinitescroll.services_order;
 		var posts_per_page = eis_infinitescroll.posts_per_page;
-		pageNum = pageNumber;
+		pageNum++;
 		
 		$.ajax({
 			url: ajaxurl,
@@ -52,8 +52,7 @@ jQuery(document).ready(function($){
 			}, 
 			success: function(data){
 				if( data.length ){
-					$('.main_services').hide();
-					$(".more_content").html(data);
+					$(".more_content").append(data);
 					$('.loader_img').css('display','none');
 					$('.loadMore_btn').show();
 					flag = true;
